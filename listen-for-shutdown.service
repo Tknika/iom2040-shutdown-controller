@@ -1,0 +1,11 @@
+[Unit]
+Description=IoM 2040 listen for shutdown
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/listen-for-shutdown.py
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
