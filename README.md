@@ -27,3 +27,13 @@ Place and connect the following circuit on raspberry GPIOs.
 
 ![What is this](RaspiProtoboard.png)
 ![What is this](RaspiScheme.png)
+
+## Modus operandi
+
+This is the **install.sh** script modus operandi:
+
+1. The script **listen-for-shutdown.py** waits to the GPIO3 to get GND for shutdown the raspberry pi at any time. :telephone_receiver:
+2. The script **listen-for-shutdown.py** is placed at **/usr/local/bin/** by the **install.sh** script. :computer:
+3. The script **listen-for-shutdown.service** makes the **listen-for-shutdown.py*** run every time the system starts. :high_brightness:
+4. The script **listen-for-shutdown.service** is placed at **/etc/systemd/system/** by the **install.sh** script. :computer:
+5. The script **install.sh** restarts and activate the needed daemons. :tractor: 
