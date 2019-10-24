@@ -1,6 +1,6 @@
 # IoM 2040 Shutdown Controller
 
-This service shuts down the IoM 2040 device when a push button (GND) connected to GPIO 3 is pressed.
+This service shuts down the IoM 2040 device when a push button (GND) connected to GPIO 3 is pressed AND shows the status of the IoM device throught a blue LED attached to the GPIO14.
 
 ## Installation
 
